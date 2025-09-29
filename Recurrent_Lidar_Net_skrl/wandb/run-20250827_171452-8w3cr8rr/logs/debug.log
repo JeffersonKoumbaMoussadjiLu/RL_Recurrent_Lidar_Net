@@ -1,0 +1,97 @@
+2025-08-27 17:14:52,620 INFO    MainThread:57428 [wandb_setup.py:_flush():81] Current SDK version is 0.20.1
+2025-08-27 17:14:52,620 INFO    MainThread:57428 [wandb_setup.py:_flush():81] Configure stats pid to 57428
+2025-08-27 17:14:52,620 INFO    MainThread:57428 [wandb_setup.py:_flush():81] Loading settings from C:\Users\jeffe\.config\wandb\settings
+2025-08-27 17:14:52,620 INFO    MainThread:57428 [wandb_setup.py:_flush():81] Loading settings from C:\Users\jeffe\OneDrive\Desktop\RL_RecurrentLidarNet\Recurrent_Lidar_Net_skrl\wandb\settings
+2025-08-27 17:14:52,623 INFO    MainThread:57428 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-08-27 17:14:52,623 INFO    MainThread:57428 [wandb_init.py:setup_run_log_directory():703] Logging user logs to C:\Users\jeffe\OneDrive\Desktop\RL_RecurrentLidarNet\Recurrent_Lidar_Net_skrl\wandb\run-20250827_171452-8w3cr8rr\logs\debug.log
+2025-08-27 17:14:52,623 INFO    MainThread:57428 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to C:\Users\jeffe\OneDrive\Desktop\RL_RecurrentLidarNet\Recurrent_Lidar_Net_skrl\wandb\run-20250827_171452-8w3cr8rr\logs\debug-internal.log
+2025-08-27 17:14:52,637 INFO    MainThread:57428 [wandb_init.py:init():831] calling init triggers
+2025-08-27 17:14:52,637 INFO    MainThread:57428 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'rollouts': 2048, 'learning_epochs': 10, 'mini_batches': 32, 'discount_factor': 0.99, 'lambda': 0.95, 'learning_rate': 0.0003, 'learning_rate_scheduler': None, 'learning_rate_scheduler_kwargs': {}, 'state_preprocessor': None, 'state_preprocessor_kwargs': {}, 'value_preprocessor': None, 'value_preprocessor_kwargs': {}, 'random_timesteps': 0, 'learning_starts': 0, 'grad_norm_clip': 0.5, 'ratio_clip': 0.2, 'value_clip': 0.2, 'clip_predicted_values': False, 'entropy_loss_scale': 0.01, 'value_loss_scale': 1.0, 'kl_threshold': 0, 'rewards_shaper': None, 'time_limit_bootstrap': False, 'mixed_precision': False, 'experiment': {'directory': 'results\\2025-08-27_171446_f1tenth_experiment', 'experiment_name': 'f1tenth_experiment', 'write_interval': 1000, 'checkpoint_interval': 'auto', 'store_separately': False, 'wandb': True, 'wandb_kwargs': {'project': 'f1tenth-rl', 'name': 'experiment-test', 'tags': []}, 'writer': 'wandb'}, 'batch_size': 64, 'timesteps': 10000000, 'headless': True, 'disable_progressbar': False, 'close_environment_at_exit': True, 'environment_info': 'episode', 'stochastic_evaluation': False, 'policy': OrderedDict([('base', SpatioTemporalRLNNet(
+  (feature_extractor): Sequential(
+    (0): Linear(in_features=1081, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=128, bias=True)
+    (3): ReLU()
+  )
+  (lstm): LSTM(128, 128)
+  (actor): Linear(in_features=128, out_features=4, bias=True)
+  (critic): Linear(in_features=128, out_features=1, bias=True)
+))]), 'value': OrderedDict([('base', SpatioTemporalRLNNet(
+  (feature_extractor): Sequential(
+    (0): Linear(in_features=1081, out_features=256, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=256, out_features=128, bias=True)
+    (3): ReLU()
+  )
+  (lstm): LSTM(128, 128)
+  (actor): Linear(in_features=128, out_features=4, bias=True)
+  (critic): Linear(in_features=128, out_features=1, bias=True)
+))]), '_wandb': {}}
+2025-08-27 17:14:52,637 INFO    MainThread:57428 [wandb_init.py:init():872] starting backend
+2025-08-27 17:14:53,671 INFO    MainThread:57428 [wandb_init.py:init():875] sending inform_init request
+2025-08-27 17:14:53,719 INFO    MainThread:57428 [wandb_init.py:init():883] backend started and connected
+2025-08-27 17:14:53,726 INFO    MainThread:57428 [wandb_init.py:init():956] updated telemetry
+2025-08-27 17:14:53,937 INFO    MainThread:57428 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-08-27 17:14:54,361 INFO    MainThread:57428 [wandb_init.py:init():1032] starting run threads in backend
+2025-08-27 17:14:54,498 INFO    MainThread:57428 [wandb_run.py:_console_start():2453] atexit reg
+2025-08-27 17:14:54,498 INFO    MainThread:57428 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-08-27 17:14:54,498 INFO    MainThread:57428 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-08-27 17:14:54,498 INFO    MainThread:57428 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-08-27 17:14:54,500 INFO    MainThread:57428 [wandb_init.py:init():1078] run started, returning control to user process
+2025-08-27 17:14:54,500 INFO    MainThread:57428 [wandb_run.py:_tensorboard_callback():1567] tensorboard callback: results\2025-08-27_171446_f1tenth_experiment\f1tenth_experiment, True
+2025-08-27 20:31:08,980 INFO    MsgRouterThr:57428 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-08-27 20:31:09,611 ERROR   MainThread:57428 [redirect.py:_on_write():664] [no run ID] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\wandb_run.py", line 2380, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\interface\interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:31:09,712 ERROR   MainThread:57428 [redirect.py:_on_write():664] [no run ID] error in stdout callback
+Traceback (most recent call last):
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\wandb_run.py", line 2374, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\wandb_run.py", line 449, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\wandb_run.py", line 1561, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\interface\interface.py", line 772, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\lib\sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\lib\sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\lib\sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\wandb\sdk\lib\sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine

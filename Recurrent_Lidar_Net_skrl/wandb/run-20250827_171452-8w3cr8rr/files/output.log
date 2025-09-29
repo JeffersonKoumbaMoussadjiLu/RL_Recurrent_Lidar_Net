@@ -1,0 +1,51 @@
+C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\gymnasium\spaces\box.py:240: UserWarning: [33mWARN: Casting input x to numpy array.[0m
+  gym.logger.warn("Casting input x to numpy array.")
+C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\gymnasium\utils\passive_env_checker.py:159: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+ 24%|████████████████████▎                                                              | 2447359/10000000 [3:16:13<10:05:32, 207.87it/s]
+C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\gymnasium\core.py:311: UserWarning: [33mWARN: env.agents to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.agents` for environment variables or `env.get_wrapper_attr('agents')` that will search the reminding wrappers.[0m
+  logger.warn(
+C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\gymnasium\core.py:311: UserWarning: [33mWARN: env.num_agents to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.num_agents` for environment variables or `env.get_wrapper_attr('num_agents')` that will search the reminding wrappers.[0m
+  logger.warn(
+C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\gymnasium\utils\passive_env_checker.py:159: UserWarning: [33mWARN: The obs returned by the `step()` method is not within the observation space.[0m
+  logger.warn(f"{pre} is not within the observation space.")
+Traceback (most recent call last):
+  File "c:\Users\jeffe\OneDrive\Desktop\RL_RecurrentLidarNet\Recurrent_Lidar_Net_skrl\train.py", line 34, in <module>
+    main()
+  File "c:\Users\jeffe\OneDrive\Desktop\RL_RecurrentLidarNet\Recurrent_Lidar_Net_skrl\train.py", line 24, in main
+    train_ppo.train(config)
+  File "c:\Users\jeffe\OneDrive\Desktop\RL_RecurrentLidarNet\Recurrent_Lidar_Net_skrl\training_script\train_ppo.py", line 152, in train
+    trainer.train()
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\skrl\trainers\torch\sequential.py", line 86, in train
+    self.single_agent_train()
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\skrl\trainers\torch\base.py", line 222, in single_agent_train
+    self.agents.post_interaction(timestep=timestep, timesteps=self.timesteps)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\skrl\agents\torch\ppo\ppo.py", line 345, in post_interaction
+    self._update(timestep, timesteps)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\skrl\agents\torch\ppo\ppo.py", line 494, in _update
+    self.optimizer.zero_grad()
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\torch\_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\torch\_dynamo\decorators.py", line 36, in disable
+    def disable(fn=None, recursive=True):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "c:\Users\jeffe\OneDrive\Desktop\RL_RecurrentLidarNet\Recurrent_Lidar_Net_skrl\train.py", line 34, in <module>
+    main()
+  File "c:\Users\jeffe\OneDrive\Desktop\RL_RecurrentLidarNet\Recurrent_Lidar_Net_skrl\train.py", line 24, in main
+    train_ppo.train(config)
+  File "c:\Users\jeffe\OneDrive\Desktop\RL_RecurrentLidarNet\Recurrent_Lidar_Net_skrl\training_script\train_ppo.py", line 152, in train
+    trainer.train()
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\skrl\trainers\torch\sequential.py", line 86, in train
+    self.single_agent_train()
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\skrl\trainers\torch\base.py", line 222, in single_agent_train
+    self.agents.post_interaction(timestep=timestep, timesteps=self.timesteps)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\skrl\agents\torch\ppo\ppo.py", line 345, in post_interaction
+    self._update(timestep, timesteps)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\skrl\agents\torch\ppo\ppo.py", line 494, in _update
+    self.optimizer.zero_grad()
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\torch\_compile.py", line 24, in inner
+    return torch._dynamo.disable(fn, recursive)(*args, **kwargs)
+  File "C:\Users\jeffe\.conda\envs\rnn-ppo-gpu\lib\site-packages\torch\_dynamo\decorators.py", line 36, in disable
+    def disable(fn=None, recursive=True):
+KeyboardInterrupt

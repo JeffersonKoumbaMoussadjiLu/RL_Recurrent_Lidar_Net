@@ -1,0 +1,43 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "CPython 3.10.18",
+  "startedAt":  "2025-08-27T21:14:53.724614Z",
+  "program":  "c:\\Users\\jeffe\\OneDrive\\Desktop\\RL_RecurrentLidarNet\\Recurrent_Lidar_Net_skrl\\train.py",
+  "codePath":  "Recurrent_Lidar_Net_skrl\\train.py",
+  "git":  {
+    "remote":  "https://github.com/JeffersonKoumbaMoussadjiLu/RL_RecurrentLidarNet.git",
+    "commit":  "8c8a44446ab64a1f188626480cbf156e5426ea8c"
+  },
+  "email":  "jkml2001@seas.upenn.edu",
+  "root":  "C:\\Users\\jeffe\\OneDrive\\Desktop\\RL_RecurrentLidarNet\\Recurrent_Lidar_Net_skrl",
+  "host":  "Jeff",
+  "executable":  "C:\\Users\\jeffe\\.conda\\envs\\rnn-ppo-gpu\\python.exe",
+  "codePathLocal":  "train.py",
+  "cpu_count":  24,
+  "cpu_count_logical":  32,
+  "gpu":  "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1021821579264",
+      "used":  "496364191744"
+    }
+  },
+  "memory":  {
+    "total":  "34070192128"
+  },
+  "cpu":  {
+    "count":  24,
+    "countLogical":  32
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "memoryTotal":  "17171480576",
+      "cudaCores":  9728,
+      "architecture":  "Ada",
+      "uuid":  "GPU-8122c7c1-b24d-2f72-34e1-5d6ebb847064"
+    }
+  ],
+  "cudaVersion":  "12.9"
+}
